@@ -1,5 +1,7 @@
 # AgentShield
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/YugeshVelkuru/AgentShield)
+
 AgentShield is a small security lab for checking AI coding-agent **action traces** against tool and file access policies. It provides safe synthetic prompt-injection scenarios, a policy evaluator, an audit log, a JSON API, a CLI, Docker packaging, and GitLab regression CI.
 
 ## Safety model

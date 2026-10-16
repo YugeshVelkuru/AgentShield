@@ -3,7 +3,8 @@ services:
     name: agentshield
     runtime: docker
     plan: free
+    region: singapore
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /health
-    autoDeploy: true
+    autoDeployTrigger: commit
