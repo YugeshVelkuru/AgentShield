@@ -1,0 +1,16 @@
+image: python:3.12-slim
+
+stages:
+  - test
+
+regression:
+  stage: test
+  before_script:
+    - pip install --no-cache-dir '.[dev]'
+  script:
+    - pytest --junitxml=report.xml
+  artifacts:
+    when: always
+    reports:
+      junit: report.xml
+    expire_in: 1 week
